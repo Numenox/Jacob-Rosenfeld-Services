@@ -33,3 +33,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+Calendly.initInlineWidget({
+  url: 'https://calendly.com/jrosenfeld-services?hide_gdpr_banner=1',
+  parentElement: document.getElementById('calendlywork'),
+  prefill: {},
+  utm: {}
+ });
