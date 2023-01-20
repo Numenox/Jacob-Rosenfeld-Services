@@ -38,8 +38,16 @@
       </div>
       <div class="half right cf">
         <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-      </div>
-      <input type="submit" value="Submit" id="input-submit">
+      </div class='container' style='width:60px;height:20px;'>
+      <button class="btn" type="button">
+        <span class="btn__text">Submit</span>
+        <svg class="btn__progress" viewBox="0 0 48 48" width="48px" height="48px">
+          <circle class="btn__progress-track" r="20" cx="24" cy="24" fill="none" stroke="#c7cad1" stroke-width="8" />
+          <circle class="btn__progress-fill" r="20" cx="24" cy="24" fill="none" stroke="#000000" stroke-width="8" transform="rotate(-90,24,24)" stroke-dasharray="125.66 125.66" stroke-dashoffset="125.66" />
+          <polyline class="btn__progress-check" points="12,24 20,32 36,16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="34 34" stroke-dashoffset="34" />
+        </svg>
+        <!-- <input type="submit" value="Submit" id="input-submit"> -->
+      </button>
     </form>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
